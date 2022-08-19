@@ -88,7 +88,8 @@ bot.on('message', async (ctx) => {
             await ctx.replyWithMarkdownV2(`Думаю отлично будет сочетаться с твоим платьем и каблуками 🤤`)
             await timeOut(3)
             await ctx.replyWithMarkdownV2(`👇 Special video 👇`)
-            // todo видео родителей
+            await ctx.replyWithVideo('BAACAgIAAxkBAAIDJmL_U49edxv-fSRXUOANPRd9yOkhAALrGwACWc_4S765YsnoDgvKKQQ')
+            await ctx.replyWithMarkdownV2(`Ждем тебя дома 😘`)
         }
 
         else {
@@ -98,7 +99,7 @@ bot.on('message', async (ctx) => {
         console.log(e)
     }
 
-})
+});
 
 
-bot.launch()
+bot.launch();
